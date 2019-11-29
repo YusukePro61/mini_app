@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments
   end
+  resources :signup, only: [:index]
+  resources :mypages, only: [:index]
   
   root "articles#index"
 end
