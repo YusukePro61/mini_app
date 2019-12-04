@@ -1,6 +1,15 @@
-%nav.navbar.navbar-light{:style => "background-color: #e3f2fd;"}
-  MiniApp
-  = link_to 'Home', root_path
-  = link_to 'Post', new_article_path
-  = link_to 'MyPage', mypages_path
-  = link_to 'Signup/Signin', signup_index_path
+- if user_signed_in?
+  %nav.navbar.navbar-light{:style => "background-color: #e3f2fd;"}
+    MiniApp
+    = link_to 'Home', root_path
+    = link_to 'Post', new_article_path
+    = link_to 'MyPage', mypages_path
+    = link_to 'Logout', destroy_user_session_path
+
+- else
+  %nav.navbar.navbar-light{:style => "background-color: #e3f2fd;"}
+    MiniApp
+    = link_to 'Home', root_path
+    = link_to 'Post', new_article_path
+    = link_to 'MyPage', mypages_path
+    = link_to 'Signup/Signin', signup_index_path
