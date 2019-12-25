@@ -64,6 +64,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem "font-awesome-rails"
 gem 'devise'
+gem 'omniauth-twitter'
+gem 'omniauth-google-oauth2'
 gem 'erb2haml'
 gem 'carrierwave'
 gem 'mini_magick'
@@ -73,3 +75,6 @@ gem 'hirb'
 gem 'hirb-unicode'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'dotenv-rails'
+gem 'ancestry'
+gem "gretel"
